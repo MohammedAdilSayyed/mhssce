@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-14 h-14 rounded-xl overflow-hidden bg-white/5 flex items-center justify-center">
@@ -38,27 +38,6 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#registration" className="hover:text-white transition-colors">Registration</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-4">For Authors</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">Call for Papers</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">Submission Guidelines</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">Paper Template</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">Review Process</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">Publication</a>
               </li>
             </ul>
           </div>
