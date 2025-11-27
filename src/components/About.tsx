@@ -33,9 +33,7 @@ export default function About() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-emerald-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            ICSET 2025 is a premier international conference that brings together leading researchers,
-            engineers, and industry professionals to discuss the latest advances in sustainable engineering
-            and technology.
+          The MHSS College of Engineering, under the aegis of Anjuman-i-Islam, proposes to organize an International Conference on Smart Systems for Sustainable Development (SmartSSD–2026) in April 2026. This conference aims to bring together researchers, academicians, industry professionals, and policy experts from across the globe to discuss innovative technologies contributing toward sustainability and green development. 
           </p>
         </div>
 

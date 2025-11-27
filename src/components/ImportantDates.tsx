@@ -5,35 +5,35 @@ export default function ImportantDates() {
     {
       icon: <FileText className="w-6 h-6" />,
       title: "Abstract Submission",
-      date: "January 15, 2025",
+      date: "Coming soon, 2026",
       status: "upcoming",
       color: "from-green-600 to-green-700"
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Acceptance Notification",
-      date: "February 10, 2025",
+      date: "Coming soon, 2026",
       status: "upcoming",
       color: "from-emerald-600 to-emerald-700"
     },
     {
       icon: <FileText className="w-6 h-6" />,
       title: "Full Paper Submission",
-      date: "February 25, 2025",
+      date: "Coming soon, 2026",
       status: "upcoming",
       color: "from-teal-600 to-teal-700"
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Early Bird Registration",
-      date: "March 1, 2025",
+      date: "Coming soon, 2026",
       status: "upcoming",
       color: "from-emerald-600 to-emerald-700"
     },
     {
       icon: <Calendar className="w-6 h-6" />,
       title: "Conference Dates",
-      date: "March 15-17, 2025",
+      date: "Coming soon, 2026",
       status: "highlighted",
       color: "from-orange-600 to-red-600"
     }

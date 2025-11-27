@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail } from 'lucide-react';
+import mhssceLogo from './mhssccelogo.jpg';
 
 export default function Footer() {
   return (
@@ -7,12 +8,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                MH
+              <div className="w-14 h-14 rounded-xl overflow-hidden bg-white/5 flex items-center justify-center">
+                <img src={mhssceLogo} alt="MHSSCE Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-lg font-bold">MHSSCE</h3>
-                <p className="text-xs text-gray-400">ICSET 2025</p>
+                <p className="text-xs text-gray-400">SmartSSD 2026</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm">
@@ -67,7 +68,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>icset2025@mhssce.ac.in</span>
+                <span>smartssd2026@mhssce.ac.in</span>
               </li>
               <li>
                 M.H. Saboo Siddik College<br />
@@ -95,12 +96,11 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © 2025 M.H. Saboo Siddik College of Engineering. All rights reserved.
+              © 2026 M.H. Saboo Siddik College of Engineering. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Sitemap</a>
             </div>
           </div>
         </div>

@@ -38,8 +38,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">icset2025@mhssce.ac.in</p>
-                  <p className="text-gray-600">info@mhssce.ac.in</p>
+                  <p className="text-gray-600">smartssd2026@mhssce.ac.in</p>
                 </div>
               </div>
 
@@ -49,8 +48,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">+91 22 2373 6153</p>
-                  <p className="text-gray-600">+91 22 2370 3651</p>
+                  <p className="text-gray-600">yet to decide</p>
+                  <p className="text-gray-600">yet to decide</p>
                 </div>
               </div>
 
@@ -70,14 +69,19 @@ export default function Contact() {
               <h4 className="font-bold text-gray-900 mb-4">Conference Coordinators</h4>
               <div className="space-y-4">
                 <div>
-                  <p className="font-semibold text-gray-900">Dr. Ahmed Khan</p>
-                  <p className="text-sm text-gray-600">Conference Chair</p>
-                  <p className="text-sm text-gray-600">Email: ahmed.khan@mhssce.ac.in</p>
+                  <p className="font-semibold text-gray-900">Dr. Irfan A. Landge</p>
+                  <p className="text-sm text-gray-600">Organizing Secretary</p>
+                  <p className="text-sm text-gray-600">Email: irfan.landge@mhssce.ac.in</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Prof. Fatima Sheikh</p>
-                  <p className="text-sm text-gray-600">Organizing Secretary</p>
-                  <p className="text-sm text-gray-600">Email: fatima.sheikh@mhssce.ac.in</p>
+                  <p className="font-semibold text-gray-900">Dr. Mohammed Ahmed Shaikh</p>
+                  <p className="text-sm text-gray-600">Organising Co-Secretary</p>
+                  <p className="text-sm text-gray-600">Email: ahmed.shaikh@mhssce.ac.in</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Prof. Samana Jafri</p>
+                  <p className="text-sm text-gray-600">Organising Co-Secretary</p>
+                  <p className="text-sm text-gray-600">Email: samana.jafri@mhssce.ac.in</p>
                 </div>
               </div>
             </div>
