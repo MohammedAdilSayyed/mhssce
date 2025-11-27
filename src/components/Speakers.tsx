@@ -25,7 +25,7 @@ export default function Speakers() {
         },
         {
           label: "Patron",
-          members: ["Dr. Abdullah Shaikh", "Dr. Aslam Khan", "Dr. Mohiuddin Ahmed"]
+          members: ["yet to announce"]
         },
         {
           label: "Conveners",

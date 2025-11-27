@@ -25,11 +25,7 @@ export default function Registration() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                 <div>
                   <p className="text-sm uppercase tracking-wide opacity-80">Standard Fee</p>
-                  <p className="text-4xl font-extrabold">₹4,500</p>
-                </div>
-                <div>
-                  <p className="text-sm uppercase tracking-wide opacity-80">Early Bird</p>
-                  <p className="text-4xl font-extrabold text-amber-200">₹4,000</p>
+                  <p className="text-4xl font-extrabold">yet to decide</p>
                 </div>
               </div>
             </div>
@@ -51,9 +47,7 @@ export default function Registration() {
               <button className="w-full mt-8 px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-lg font-semibold hover:shadow-lg transition-all">
                 Register Now
               </button>
-              <p className="text-xs text-gray-500 mt-3 text-center">
-                *Early bird rates valid until Coming soon, 2026. Final fee schedule to be announced shortly.
-              </p>
+              
             </div>
           </div>
         </div>
