@@ -1,7 +1,11 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import mhssceLogo from './images/mhssccelogo.png';
 
 export default function Footer() {
+  const location = useLocation();
+  const showQuickLinks = location.pathname !== '/papersubmission';
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -21,26 +25,28 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#home" className="hover:text-white transition-colors">Home</a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-white transition-colors">About Conference</a>
-              </li>
-              <li>
-                <a href="#dates" className="hover:text-white transition-colors">Important Dates</a>
-              </li>
-              <li>
-                <a href="#committee" className="hover:text-white transition-colors">Committee</a>
-              </li>
-              <li>
-                <a href="#registration" className="hover:text-white transition-colors">Registration</a>
-              </li>
-            </ul>
-          </div>
+          {showQuickLinks && (
+            <div>
+              <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <a href="#home" className="hover:text-white transition-colors">Home</a>
+                </li>
+                <li>
+                  <a href="#about" className="hover:text-white transition-colors">About Conference</a>
+                </li>
+                <li>
+                  <a href="#dates" className="hover:text-white transition-colors">Important Dates</a>
+                </li>
+                <li>
+                  <a href="#committee" className="hover:text-white transition-colors">Committee</a>
+                </li>
+                <li>
+                  <a href="#registration" className="hover:text-white transition-colors">Registration</a>
+                </li>
+              </ul>
+            </div>
+          )}
 
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Info</h4>

@@ -82,7 +82,7 @@ export default function Speakers() {
       icon: Users,
       description: "Strategic advisors guiding the conference vision.",
       entries: [
-         { members: [{ name: "Dr. M. Tanveer, Professor, IIT Indore" }] },
+        { members: [{ name: "Dr. M. Tanveer, Professor, IIT Indore" }] },
         { members: [{ name: "Sachin Ambekar, Security delivery head, TCS" }] },
         { members: [{ name: "Dr. Vinod V. Kimbahune Professor, Department of Computer Engineering, Dr. D. Y. Patil Institute of Technology, Pimpri, Pune" }] },
         { members: [{ name: "Dr. Pranav M. Pawar, Assistant Professor, Department of Computer Science, BITS Pilani, Dubai Campus,Dubai, UAE" }] },
