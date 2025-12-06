@@ -13,7 +13,8 @@ import PaperSubmission from './components/PaperSubmission';
 
 function App() {
   return (
-    <Router basename="/smartssd">
+    //add smartssd in basename
+    <Router basename="/">
       <div className="min-h-screen">
         <Header />
         <Routes>
