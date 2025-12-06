@@ -54,7 +54,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/papersubmission"
+            href="/smartssd/papersubmission"
             className="px-8 py-4 bg-white text-green-600 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl text-center"
           >
             Submit Paper

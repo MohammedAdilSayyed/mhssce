@@ -9,12 +9,12 @@ import Journal from './components/Journal';
 import Mumbai from './components/Mumbai';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import PaperSubmission from './components/PaperSubmission';
+import PaperSubmissionPage from './pages/PaperSubmissionPage';
 
 function App() {
   return (
     //add smartssd in basename
-    <Router basename="/">
+    <Router basename="/smartssd">
       <div className="min-h-screen">
         <Header />
         <Routes>
@@ -25,7 +25,6 @@ function App() {
               <ImportantDates />
               <Committee />
               <Registration />
-              <PaperSubmission />
               <Journal />
               <Mumbai />
               <Contact />
@@ -33,10 +32,7 @@ function App() {
             </>
           } />
           <Route path="/papersubmission" element={
-            <>
-              <PaperSubmission />
-              <Footer />
-            </>
+            <PaperSubmissionPage />
           } />
         </Routes>
       </div>
