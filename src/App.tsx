@@ -13,8 +13,9 @@ import PaperSubmissionPage from './pages/PaperSubmissionPage';
 
 function App() {
   return (
-    //add smartssd in basename
-    <Router basename="/smartssd">
+    //uncomment below when build and comment basename="/"
+    //<Router basename="/smartssd">
+    <Router basename="/">
       <div className="min-h-screen">
         <Header />
         <Routes>
