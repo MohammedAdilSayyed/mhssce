@@ -22,12 +22,11 @@ export default function PaperSubmissionPage() {
               </p>
             </div>
 
+            <p style={{color: 'brown', fontSize: '1.1em', marginBottom: '24px'}}>
+              <strong>CMT Acknowledgement:</strong> The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <div className="mt-6 mb-6">
-                <p className="text-gray-800">
-                CMT ACKNOWLEDGMENT: The Microsoft CMT service was used for managing the peer-review process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-                </p>
-              </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
