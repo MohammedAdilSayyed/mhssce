@@ -1,5 +1,6 @@
 import { ClipboardList, X } from 'lucide-react';
 import { useState } from 'react';
+import qrCodeImage from './images/qr.jpeg';
 
 export default function Registration() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -199,7 +200,7 @@ export default function Registration() {
                   <h4 className="text-lg font-semibold mb-2">QR Code Payment</h4>
                   <div className="bg-white rounded-lg p-4">
                     <img 
-                      src="/src/components/images/qr.jpeg" 
+                      src={qrCodeImage} 
                       alt="Payment QR Code" 
                       className="w-full h-auto rounded"
                     />
