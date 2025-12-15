@@ -8,7 +8,7 @@ export default function PaperSubmissionPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-green-50">
       <Header />
-      
+
       <main className="pt-20">
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,12 +22,9 @@ export default function PaperSubmissionPage() {
               </p>
             </div>
 
-            <p style={{color: 'brown', fontSize: '1.1em', marginBottom: '24px'}}>
-              <strong>CMT Acknowledgement:</strong> The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-            </p>
-
+            {/* CMT acknowledgment is now in index.html for better scanning */}
             <div className="bg-white rounded-xl shadow-lg p-8">
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-bold text-gray-900 mb-3">For Authors</h4>
@@ -63,14 +60,17 @@ export default function PaperSubmissionPage() {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <button 
+                <a
+                  href="https://cmt3.research.microsoft.com/SMARTSSD2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-8 py-4 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-lg rounded-lg hover:shadow-lg transition-all transform hover:scale-105 cursor-pointer text-center"
                 >
                   Submit Paper
-                </button>
-                <button 
+                </a>
+                <button
                   onClick={() => navigate('/')}
                   className="px-8 py-4 bg-gradient-to-r from-gray-600 to-gray-500 text-white font-semibold text-lg rounded-lg hover:shadow-lg transition-all transform hover:scale-105 cursor-pointer text-center"
                 >
@@ -81,7 +81,7 @@ export default function PaperSubmissionPage() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

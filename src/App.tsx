@@ -14,9 +14,8 @@ import PaperSubmissionPage from './pages/PaperSubmissionPage';
 function App() {
   return (
     //uncomment below when build and comment basename="/"
-    //<Router basename="/smartssd"></Router>
-    <Router basename="/">
-    
+    //<Router basename="/">
+    <Router basename="/smartssd">
       <div className="min-h-screen">
         <Header />
         <Routes>

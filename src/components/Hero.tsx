@@ -29,7 +29,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl sm:text-2xl md:text-3xl mb-4 font-light">
-        International Conference on Smart System for Sustainable Development 2026
+          International Conference on Smart System for Sustainable Development 2026
         </p>
 
         <div className="mb-8">
@@ -54,7 +54,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/smartssd/papersubmission"
+            href="smartssd/papersubmission"
             className="px-8 py-4 bg-white text-green-600 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl text-center"
           >
             Submit Paper
@@ -65,10 +65,14 @@ export default function Hero() {
           >
             Register Now
           </a>
-          <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white rounded-lg font-semibold hover:bg-white/20 transition-all transform hover:scale-105 flex items-center gap-2 justify-center">
+          <a
+            href="/ICSSSD-2026-Brochure.pdf"
+            download="ICSSSD-2026-Brochure.pdf"
+            className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white rounded-lg font-semibold hover:bg-white/20 transition-all transform hover:scale-105 flex items-center gap-2 justify-center"
+          >
             <Download className="w-5 h-5" />
             Brochure
-          </button>
+          </a>
         </div>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
