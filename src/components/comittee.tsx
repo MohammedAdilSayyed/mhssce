@@ -29,6 +29,7 @@ const drAbdullahShaikhImage = new URL('./images/Dr. Abdullah Shaikh, Hon. Vice P
 const drMohammedAslamKhanImage = new URL('./images/Dr. Mohammed Aslam Khan Hon. Executive Chairman.png', import.meta.url).href;
 const drMTanveerImage = new URL('./images/Dr. M. Tanveer, Professor, IIT Indore.png', import.meta.url).href;
 const profAfsharAlamImage = new URL('./images/Prof. Dr. M. Afshar Alam, Vice-Chancellor, Jamia Hamdard.png', import.meta.url).href;
+const sandeepSharmaImage = new URL('./images/Sandeep Sharma Founder & Managaing Director NorthStar Global Advisory.png', import.meta.url).href;
 
 export default function Speakers() {
   const committeeSections: CommitteeSection[] = [
@@ -147,7 +148,7 @@ export default function Speakers() {
       icon: Layers,
       description: "Coordinating sessions across all engineering departments.",
       entries: [
-        { 
+        {
           label: "Department Heads",
           members: [
             { name: "Dr. Ashfaq Shaikh, HoD, Computer Engineering" },
@@ -171,7 +172,8 @@ export default function Speakers() {
         {
           members: [
             { name: "Dr. M. Tanveer, Professor, IIT Indore", image: drMTanveerImage },
-            { name: "Prof. Dr. M. Afshar Alam, Vice-Chancellor, Jamia Hamdard", image: profAfsharAlamImage }
+            { name: "Prof. Dr. M. Afshar Alam, Vice-Chancellor, Jamia Hamdard", image: profAfsharAlamImage },
+            { name: "Sandeep Sharma, Founder & Managing Director, NorthStar Global Advisory", image: sandeepSharmaImage }
           ]
         }
       ]
@@ -222,9 +224,8 @@ export default function Speakers() {
             return (
               <div
                 key={index}
-                className={`bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 flex flex-col ${
-                  section.title === "Committee Members" || section.title === "Department Session Management Committee" || section.title === "Keynote Speakers" || section.title === "Program Advisory Chair" ? "lg:col-span-2 min-h-[560px] w-full" : "min-h-[380px]"
-                }`}
+                className={`bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 flex flex-col ${section.title === "Committee Members" || section.title === "Department Session Management Committee" || section.title === "Keynote Speakers" || section.title === "Program Advisory Chair" ? "lg:col-span-2 min-h-[560px] w-full" : "min-h-[380px]"
+                  }`}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-600/15 to-green-500/15 text-green-700 flex items-center justify-center shadow-lg border border-green-100">
@@ -240,9 +241,8 @@ export default function Speakers() {
                   {section.entries.map((entry, entryIndex) => (
                     <div
                       key={entryIndex}
-                      className={`border border-green-200/70 rounded-2xl p-6 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 ${
-                        section.title === "Keynote Speakers" ? "speakers-section" : ""
-                      }`}
+                      className={`border border-green-200/70 rounded-2xl p-6 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 ${section.title === "Keynote Speakers" ? "speakers-section" : ""
+                        }`}
                       id={section.title === "Keynote Speakers" ? "speakers" : undefined}
                     >
                       {entry.label && (
@@ -251,10 +251,12 @@ export default function Speakers() {
                         </p>
                       )}
                       {section.title === "Keynote Speakers" ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          {entry.members.map((member, memberIndex) => (
-                            <MemberWithImage key={memberIndex} member={member} />
-                          ))}
+                        <div className="flex justify-center items-center py-4">
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            {entry.members.map((member, memberIndex) => (
+                              <MemberWithImage key={memberIndex} member={member} />
+                            ))}
+                          </div>
                         </div>
                       ) : section.title === " Technical Advisory Board" || section.title === "Registration & Publication Chair" || section.title === "Publicity & Media Chair" || section.title === "Finance Chair" || section.title === "Sponsorship & Industry Relations Chair" || section.title === "Hospitality Chair" ? (
                         <div className="flex flex-wrap gap-6">
