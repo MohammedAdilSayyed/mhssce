@@ -13,7 +13,7 @@ export default function ImportantDates() {
     {
       icon: <FileText className="w-6 h-6" />,
       title: "Last Date of Submission",
-      date: "15",
+      date: "28",
       month: "February 2026",
       status: "upcoming",
       color: "from-green-600 to-green-700"
@@ -61,9 +61,8 @@ export default function ImportantDates() {
           {dates.map((item, index) => (
             <div
               key={index}
-              className={`bg-white rounded-lg shadow-md overflow-hidden transform transition-all hover:scale-105 hover:shadow-lg ${
-                item.status === 'highlighted' ? 'ring-2 ring-orange-500 ring-opacity-50' : ''
-              }`}
+              className={`bg-white rounded-lg shadow-md overflow-hidden transform transition-all hover:scale-105 hover:shadow-lg ${item.status === 'highlighted' ? 'ring-2 ring-orange-500 ring-opacity-50' : ''
+                }`}
             >
               <div className={`bg-gradient-to-r ${item.color} p-4 text-white`}>
                 <div className="flex justify-center mb-3">

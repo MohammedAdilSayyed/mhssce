@@ -9,7 +9,7 @@ export default function About() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-emerald-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          The MHSS College of Engineering, under the aegis of Anjuman-i-Islam, proposes to organize an International Conference on Smart Systems for Sustainable Development (SmartSSD 2026) in April 2026. This conference aims to bring together researchers, academicians, industry professionals, and policy experts from across the globe to discuss innovative technologies contributing toward sustainability and green development. 
+            The MHSS College of Engineering, under the aegis of Anjuman-i-Islam, proposes to organize an International Conference on Smart Systems for Sustainable Development (SmartSSD 2026) in April 2026. This conference aims to bring together researchers, academicians, industry professionals, and policy experts from across the globe to discuss innovative technologies contributing toward sustainability and green development.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function About() {
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               The conference focuses on advancing sustainable engineering practices and innovative technologies
               that address contemporary global challenges. We invite original research papers
-             in various domains including:
+              in various domains including:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="space-y-3 text-gray-700">
@@ -81,6 +81,10 @@ export default function About() {
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
                   <span>Sustainable Manufacturing & Smart Industrial System</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2"></span>
+                  <span>Advancements in Civil Engineering : Building a Sustainable Future</span>
                 </li>
               </ul>
               <ul className="space-y-3 text-gray-700">

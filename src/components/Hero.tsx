@@ -66,7 +66,7 @@ export default function Hero() {
             Register Now
           </a>
           <a
-            href="/ICSSSD-2026-Brochure.pdf"
+            href="/smartssd/ICSSSD-2026-Brochure.pdf"
             download="ICSSSD-2026-Brochure.pdf"
             className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white rounded-lg font-semibold hover:bg-white/20 transition-all transform hover:scale-105 flex items-center gap-2 justify-center"
           >

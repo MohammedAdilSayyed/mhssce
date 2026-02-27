@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { Download } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -69,6 +70,14 @@ export default function PaperSubmissionPage() {
                   className="px-8 py-4 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-lg rounded-lg hover:shadow-lg transition-all transform hover:scale-105 cursor-pointer text-center"
                 >
                   Submit Paper
+                </a>
+                <a
+                  href="GR%20Journals%20Submission%20Template%20(Instructions).docx"
+                  download
+                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold text-lg rounded-lg hover:shadow-lg transition-all transform hover:scale-105 cursor-pointer text-center flex items-center justify-center gap-2"
+                >
+                  <Download className="w-5 h-5" />
+                  Template
                 </a>
                 <button
                   onClick={() => navigate('/')}
