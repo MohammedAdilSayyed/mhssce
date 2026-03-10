@@ -21,23 +21,23 @@ export default function ImportantDates() {
     {
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Acceptance",
-      date: "5",
-      month: "March 2026",
+      date: "Yet to announce",
+      month: "",
       status: "upcoming",
-      color: "from-emerald-600 to-emerald-700"
+      color: "from-emerald-600 to-emerald-700",
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Camera Ready Paper Submission",
-      date: "10",
-      month: "March 2026",
+      date: "Yet to announce",
+      month: "",
       status: "upcoming",
       color: "from-emerald-600 to-emerald-700"
     },
     {
       icon: <Calendar className="w-6 h-6" />,
       title: "Date of Conference",
-      date: "4 & 5",
+      date: "15 & 16",
       month: "April 2026",
       status: "highlighted",
       color: "from-orange-600 to-red-600"
@@ -73,8 +73,15 @@ export default function ImportantDates() {
                 </h3>
               </div>
               <div className="p-4 text-center">
+                {item.strikeThrough && (
+                  <p className="text-sm text-gray-500 line-through mb-1">
+                    {item.strikeThrough}
+                  </p>
+                )}
                 <p className="text-lg font-bold text-gray-900">
-                  {item.date.includes(' & ') ? (
+                  {item.date === "Yet to announce" ? (
+                    <span className="text-base font-semibold text-gray-700">{item.date}</span>
+                  ) : item.date.includes(' & ') ? (
                     <>
                       {item.date.split(' & ')[0]}
                       <span className="text-xs align-super font-semibold ml-0.5">
@@ -113,7 +120,7 @@ export default function ImportantDates() {
                     </>
                   )}
                 </p>
-                <p className="text-sm text-gray-600 mt-1">{item.month}</p>
+                {item.month && <p className="text-sm text-gray-600 mt-1">{item.month}</p>}
                 {item.status === 'highlighted' && (
                   <span className="inline-block mt-2 px-2 py-1 bg-orange-100 text-orange-800 text-xs font-semibold rounded-full">
                     Main Event

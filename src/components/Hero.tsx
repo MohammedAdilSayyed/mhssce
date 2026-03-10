@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
           <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
             <Calendar className="w-5 h-5" />
-            <span className="font-semibold">4th & 5th April 2026</span>
+            <span className="font-semibold">15th & 16th April 2026</span>
           </div>
           <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
             <MapPin className="w-5 h-5" />
